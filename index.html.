@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agroestudio | Centro de Gestión Digital</title>
+    <style>
+        :root {
+            --agro-green: #2d5a27;
+            --agro-light: #4caf50;
+            --dark: #1a1a1a;
+            --white: #ffffff;
+            --gray: #f4f7f6;
+        }
+
+        body {
+            margin: 0;
+            font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+            background-color: var(--gray);
+            color: var(--dark);
+            display: flex;
+            justify-content: center;
+        }
+
+        .container {
+            width: 100%;
+            max-width: 450px;
+            background: var(--white);
+            min-height: 100vh;
+            box-shadow: 0 0 20px rgba(0,0,0,0.1);
+        }
+
+        /* Header Institucional */
+        .header {
+            background: var(--agro-green);
+            color: var(--white);
+            padding: 40px 20px;
+            text-align: center;
+            border-bottom: 5px solid var(--agro-light);
+        }
+
+        .header h1 { margin: 0; font-size: 1.5rem; letter-spacing: 1px; }
+        .header p { margin: 5px 0 0; font-size: 0.9rem; opacity: 0.9; }
+
+        /* Sección de Simulación de Estadísticas (Lo que pidió Hernán) */
+        .stats-preview {
+            padding: 15px;
+            background: #e8f5e9;
+            margin: 20px;
+            border-radius: 10px;
+            border: 1px dashed var(--agro-green);
+            font-size: 0.8rem;
+        }
+
+        /* Grid de Servicios con Descripciones */
+        .services-grid { padding: 10px 20px; }
+
+        .service-card {
+            background: var(--white);
+            border: 1px solid #ddd;
+            border-radius: 12px;
+            padding: 20px;
+            margin-bottom: 15px;
+            text-decoration: none;
+            color: inherit;
+            display: block;
+            transition: transform 0.2s, box-shadow 0.2s;
+            border-left: 6px solid var(--agro-green);
+        }
+
+        .service-card:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+
+        .service-card h3 { margin: 0 0 8px 0; color: var(--agro-green); display: flex; align-items: center; gap: 10px; }
+        .service-card p { margin: 0; font-size: 0.85rem; color: #555; line-height: 1.4; }
+        
+        .tag {
+            font-size: 0.7rem;
+            background: var(--agro-light);
+            color: white;
+            padding: 2px 8px;
+            border-radius: 20px;
+            text-transform: uppercase;
+            font-weight: bold;
+            margin-bottom: 5px;
+            display: inline-block;
+        }
+
+        .footer {
+            text-align: center;
+            padding: 30px;
+            font-size: 0.7rem;
+            color: #999;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <div class="header">
+        <h1>AGROESTUDIO RAFAELA</h1>
+        <p>Tecnología aplicada al campo</p>
+    </div>
+
+    <div class="stats-preview">
+        <strong>📊 Panel de Control (Simulación IA):</strong><br>
+        • Consultas totales hoy: 124<br>
+        • Interés: Ganadería (45%) | Drones (35%) | Nano (20%)
+    </div>
+
+    <div class="services-grid">
+        <a href="https://wa.me/5493492661186?text=[DRONES]%20Hola,%20solicito%20asesoramiento%20sobre%20mapeo%20y%20pulverización." class="service-card">
+            <span class="tag">Ingeniero a cargo: Área Tech</span>
+            <h3>🛸 Servicio de Drones</h3>
+            <p>Optimización de pulverización y mapeo multiespectral. Maximice el rinde de su lote con tecnología de precisión.</p>
+        </a>
+
+        <a href="https://wa.me/5493492661186?text=[GANADERIA]%20Hola,%20me%20interesa%20el%20asesoramiento%20integral%20ganadero." class="service-card">
+            <span class="tag">Ingeniero a cargo: Área Producción</span>
+            <h3>🐄 Asesoramiento Ganadero</h3>
+            <p>Consultoría integral para la toma de decisiones estratégicas. Mejora de índices productivos y gestión de rodeos.</p>
+        </a>
+
+        <a href="https://wa.me/5493492661186?text=[NANO]%20Hola,%20quiero%20info%20sobre%20recuperación%20de%20suelos." class="service-card">
+            <span class="tag">Ingeniero a cargo: Área Suelos</span>
+            <h3>🌱 Nanofertilizantes</h3>
+            <p>Recuperación de suelos degradados y nutrición foliar de alta eficiencia mediante nanopartículas de última generación.</p>
+        </a>
+    </div>
+
+    <div class="footer">
+        Desarrollado con Tecnología Vercel/GitHub de alta disponibilidad.<br>
+        © 2026 Agroestudio Rafaela.
+    </div>
+</div>
+
+</body>
+</html>
